@@ -1,13 +1,113 @@
+/* You can add global styles to this file, and also import other style files */
 body {
+  margin: 0px;
+  background-color: #f3f5fd;
+}
+.head {
+  background-color: #151828;
+  padding: 15px;
+  display: flow-root;
+}
+.head .logo {
+float: left;
+}
+.head .logo img {
+  width: 250px;
+  height: 40px;
+}
+.menuItesms {
+  display: flex;
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.menuItesms a {
+  text-decoration: none;
+  color: inherit;
+}
+.menuItesms ul {
+  display: flex;
+  list-style: none;
+  color: white;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin-right: 15px;
+}
+.menuItesms ul li {
+  padding: 0px 15px;
+  cursor: pointer;
+}
+.menuItesms .userProfile {
+  position: relative;
+}
+.menuItesms .userProfile img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.menuItesms .userProfile .userDetails {
+  background-color: white;
+  border: solid 1px #654b4b;
+  padding: 15px;
+  border-radius: 5px;
+  position: absolute;
+  border-radius: 5px;
+  left: -159px;
+  width: 183px;
+  top: 35px;
+  display: none;
+}
+.menuItesms .userProfile img:hover ~.userDetails {
+  display: block;
+}
+.menuItesms .userProfile .userDetails .btm-brd {
+  font-weight: 600;
+}
+/* Login Page */
+.login {
+  margin-top: 100px;   
+}
+.login .loginForm {
+  padding: 25px;
+  background-color: white;
+  margin: auto;
+  width: 25%;
+  border-radius: 10px;
+}
+.login .loginForm .formEle {
+  padding: 15px 0px;
+}
+.login .loginForm .formEle input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 1px #dcdcdc;
+  padding: 5px;
+}
+.login .loginForm .formEle input:focus {
+  outline: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.innerContent {
+  padding: 20px 0px;
+  width: 90%;
+  margin: auto;
+}
+
+
+/* devices */
+.looped {
+  list-style: none;
+  margin: 0;
+  padding: 0px;
+}
+.listItem {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px;
+}
+.listItem .image img{
+  width: 35px;
+  height: 35px;
 }
